@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Arial";
+}
+
+video {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 430px;
+  height: 245px;
+}
+
+.main-header {
+  width: calc(100% - 100px);
+  padding: 50px;
+  position: relative;
+  background-color: #445162;
+}
+
+.main-header h1 {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.main-header img {
+  width: 469px;
+  height: 214px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+@media screen and (max-width: 1050px) {
+
+  .main-header img,
+  video {
+    width: 235px;
+    height: 107px;
+  }
+}
+
+.main-header-list li {
+  list-style-type: none;
+  padding-left: 38px;
+  background-image: url("li.jpg");
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.about-product {
+  width: calc(100% - 100px);
+  padding: 50px;
+  position: relative;
+  background-color: #fff;
+}
+
+.about-product h3 {
+  width: 254px;
+  height: 28px;
+  color: #445161;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+.about {
+  width: 653px;
+  max-width: 70%;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.dignity {
+  width: calc(100% - 100px);
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.dignity h3 {
+  text-align: center;
+  color: #445161;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+.dignity .flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dignity details {
+  width: 49%;
+  text-align: justify;
+  margin: 12px 0 15px 0;
+}
+
+.dignity summary {
+  padding: 0 0 9px 0;
+}
+
+.dignity summary::-webkit-details-marker {
+  display: none
+}
+
+.dignity summary::before {
+  content: url("plus.jpg");
+  float: left;
+  margin: 0 21px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}
+
+.dignity details[open] summary::before {
+  content: url("minus.jpg");
+}
